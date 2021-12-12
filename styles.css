@@ -1,0 +1,12 @@
+/* This provides styling for the entire page */
+body{
+    font-family: Abril Fatface;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+header{
+
+}
