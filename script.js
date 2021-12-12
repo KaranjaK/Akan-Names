@@ -1,7 +1,6 @@
 function akanName(){
     var day = new Date (document.getElementById('date').value);
     var date = day.getDay();
-    var a;
     var gender = document.getElementById("gender").value
     if (gender == 'male'){
         if(date == 0){
