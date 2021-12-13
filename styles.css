@@ -60,3 +60,11 @@ header p{
     display: flex;
     justify-content: center;
 }
+footer{
+    height: 2em;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
