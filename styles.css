@@ -49,6 +49,9 @@ header p{
     font-size: 1.5em;
     padding:.5em;
 }
+.btn {
+    background-color: rgb(224, 224, 0);
+}
 .modal-title{
     display: flex;
     justify-content: center;
