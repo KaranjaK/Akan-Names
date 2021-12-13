@@ -40,10 +40,20 @@ header p{
 .form h1{
     font-family: Oleo Script Swash Caps;
     font-size: 6em;
-    padding-top: 1em; 
+    padding:.5em;
+
 }
 .form p {
     display: flex;
     flex-direction: column;
     font-size: 1.5em;
+    padding:.5em;
+}
+.modal-title{
+    display: flex;
+    justify-content: center;
+}
+.modal-body{
+    display: flex;
+    justify-content: center;
 }
