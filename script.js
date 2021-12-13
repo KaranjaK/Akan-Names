@@ -4,49 +4,49 @@ function akanName(){
     var gender = document.getElementById("gender").value
     if (gender == 'male'){
         if(date == 0){
-            console.log("You were born on Sunday so we name you Kwasi")
+            alert("You were born on Sunday so we name you Kwasi")
         }
         else if(date == 1){
-            console.log("You were born on Monday so we name you Kwadwo")
+            alert("You were born on Monday so we name you Kwadwo")
         }
         else if(date == 2){
-            console.log("You were born on Tuesday so we name you Kwabena")
+            alert("You were born on Tuesday so we name you Kwabena")
         }
         else if(date == 3){
-            console.log("You were born on Wednesday so we name you Kwaku")
+            alert("You were born on Wednesday so we name you Kwaku")
         }
         else if(date == 4){
-            console.log("You were born on Thursday so we name you Yaw")
+            alert("You were born on Thursday so we name you Yaw")
         }
         else if(date == 5){
-            console.log("You were born on Friday so we name you Kofi")
+            alert("You were born on Friday so we name you Kofi")
         }
         else
-            console.log("You were born on Saturday so we name you Kwame")
+            alert("You were born on Saturday so we name you Kwame")
     }
     else if (gender == 'female'){
         if(date == 0){
-            console.log("You were born on Sunday so we name you Akosua")
+            alert("You were born on Sunday so we name you Akosua")
         }
         else if(date == 1){
-            console.log("You were born on Monday so we name you Adwoa")
+            alert("You were born on Monday so we name you Adwoa")
         }
         else if(date == 2){
-            console.log("You were born on Tuesday so we name you Abenaa")
+            alert("You were born on Tuesday so we name you Abenaa")
         }
         else if(date == 3){
-            console.log("You were born on Wednesday so we name you Akua")
+            alert("You were born on Wednesday so we name you Akua")
         }
         else if(date == 4){
-            console.log("You were born on Thursday so we name you Yaa")
+            alert("You were born on Thursday so we name you Yaa")
         }
         else if(date == 5){
-            console.log("You were born on Friday so we name you Afua")
+            alert("You were born on Friday so we name you Afua")
         }
         else
-            console.log("You were born on Saturday so we name you Ama")
+            alert("You were born on Saturday so we name you Ama")
           
     }
     else
-        console.log("Sorry. We do not have Akan Name for the Gender you Picked")
+        alert("Sorry. We do not have an Akan Name for the Gender you Picked")
 }
