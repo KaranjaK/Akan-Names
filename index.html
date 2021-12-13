@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oleo Script Swash Caps" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Akan Name</title>
 </head>
 <body>
@@ -22,7 +25,34 @@
             <span>Nkrumah and former United Nations Secretary-General Kofi Annan.</span>
         </p>
     </header>
-    
+    <!-- This is the form section -->
+    <div class="form">
+        <h1>Get your Akan Name</h1>
+        <p>
+            <span>This webpage will pick your birthday that you will select as well as your gender</span>
+            <span>It will then find the day you were born and then provide you with an Akan Name</span>
+        </p>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Akan Name</button>
+        <!-- Pop-up Modal Section  -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Form in the pop-up -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+</div>
     <form action="javascript:akanName()">
         <label for="date">Date of Birth: </label>
         <input type="date" name="day" id="date"><br>
