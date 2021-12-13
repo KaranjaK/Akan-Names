@@ -14,6 +14,11 @@ There are no bugs
 * CSS
 * Bookstrap
 * JavaScript
+## BDD
+* Click on the Akan Name Button.
+* Select your date of birth
+* Select Your gender
+* Click submit and await you Akan Nmae
 ## Support and contact details
 Email: karanjakelvin77@gmail.com
 
