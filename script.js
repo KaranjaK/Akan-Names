@@ -53,11 +53,35 @@
 //         alert("Sorry. We do not have an Akan Name for the Gender you Picked")
 // }
 
-<<<<<<< HEAD
+
 // Declaration for the various variables and arrays to be used in the fuctions 
-let 
+let CC, YY, MM, DD; 
+const monthConvert = ["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"];
+
+// This function will validate the date fed in the form
 function inputValidate(){
 
+    // It will convert the month provided into an index for validation
+    let monthInput = document.form.month.value.toUpperCase();
+    let monthIndex = monthConvert.indexOf(monthInput);
+
+    // If else statement for data validation 
+    if(document.form.year.value.length !=4 || document.form.year.value <1900 || document.form.year.value >2023){
+        alert("Your year of birth has to be a four digit number which is less than 1900 and not more than 2022 ");
+        document.form.year.focus();
+        return false;
+    }
+    else if(monthIndex <0 || monthIndex >11 ){
+        alert("Your month of birth is not a valid Calendar month");
+        document.form.month.focus();
+        return false;
+    }
+    else if(document.form.date.value <0 || document.form.date.value >31 ){
+        alert("Your date of birth is not a valid Calendar date");
+        document.form.date.focus();
+        return false;
+    }
+    else{
+        return true;
+    }
 }
-=======
->>>>>>> b26b2fb9c0330e43f6ba1c25554b4341b2d6b050
