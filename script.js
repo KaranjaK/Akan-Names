@@ -55,15 +55,15 @@
 
 
 // Declaration for the various variables and arrays to be used in the fuctions 
-let CC, YY, MM, DD; 
+let CC, YY, MM, DD, d, monthIndex, monthInput, birthYear, dayAkanName; 
 const monthConvert = ["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"];
 
 // This function will validate the date fed in the form
 function inputValidate(){
 
     // It will convert the month provided into an index for validation
-    let monthInput = document.form.month.value.toUpperCase();
-    let monthIndex = monthConvert.indexOf(monthInput);
+    monthInput = document.form.month.value.toUpperCase();
+    monthIndex = monthConvert.indexOf(monthInput);
 
     // If else statement for data validation 
     if(document.form.year.value.length !=4 || document.form.year.value <1900 || document.form.year.value >2023){
@@ -85,3 +85,71 @@ function inputValidate(){
         return true;
     }
 }
+
+// This function will calculate the day of the week for the birthday that the user has provided
+function findDay(){
+    // It will convert the month provided into an index for validation
+    monthInput = document.form.month.value.toUpperCase();
+    monthIndex = monthConvert.indexOf(monthInput);
+
+    // This will pick the necessary data for the formula and calculate the day
+    birthYear = document.getElementById("year").value;
+    CC = parseInt(birthYear.substring(0,2));
+    YY = parseInt(birthYear.substring(2,4));
+    MM = monthIndex;
+    DD = parseInt(document.getElementById("date").value);
+    d = (((CC/4)-2*CC-1) + ((5*YY/4)) + ((26*(MM+1)/10)) + DD)%7;
+    return (Math.floor(d));
+}
+
+function gender(){
+    let gender = document.getElementById(gender).value;
+    if (gender == 'male'){
+        if(date == 0){
+            alert("You were born on Sunday so we name you Kwasi")
+        }
+        else if(date == 1){
+            alert("You were born on Monday so we name you Kwadwo")
+        }
+        else if(date == 2){
+            alert("You were born on Tuesday so we name you Kwabena")
+        }
+        else if(date == 3){
+            alert("You were born on Wednesday so we name you Kwaku")
+        }
+        else if(date == 4){
+            alert("You were born on Thursday so we name you Yaw")
+        }
+        else if(date == 5){
+            alert("You were born on Friday so we name you Kofi")
+        }
+        else
+            alert("You were born on Saturday so we name you Kwame")
+    }
+    else if (gender == 'female'){
+        if(date == 0){
+            alert("You were born on Sunday so we name you Akosua")
+        }
+        else if(date == 1){
+            alert("You were born on Monday so we name you Adwoa")
+        }
+        else if(date == 2){
+            alert("You were born on Tuesday so we name you Abenaa")
+        }
+        else if(date == 3){
+            alert("You were born on Wednesday so we name you Akua")
+        }
+        else if(date == 4){
+            alert("You were born on Thursday so we name you Yaa")
+        }
+        else if(date == 5){
+            alert("You were born on Friday so we name you Afua")
+        }
+        else
+            alert("You were born on Saturday so we name you Ama")
+          
+    }
+    else
+        alert("Sorry. We do not have an Akan Name for the Gender you Picked")    
+}
+
