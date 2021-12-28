@@ -53,8 +53,11 @@
 //         alert("Sorry. We do not have an Akan Name for the Gender you Picked")
 // }
 
+<<<<<<< HEAD
 // Declaration for the various variables and arrays to be used in the fuctions 
 let 
 function inputValidate(){
 
 }
+=======
+>>>>>>> b26b2fb9c0330e43f6ba1c25554b4341b2d6b050
