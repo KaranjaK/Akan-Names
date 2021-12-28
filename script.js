@@ -52,3 +52,4 @@
 //     else
 //         alert("Sorry. We do not have an Akan Name for the Gender you Picked")
 // }
+
