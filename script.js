@@ -99,7 +99,8 @@ function findDay(){
     MM = monthIndex;
     DD = parseInt(document.getElementById("date").value);
     d = (((CC/4)-2*CC-1) + ((5*YY/4)) + ((26*(MM+1)/10)) + DD)%7;
-    return (Math.floor(d));
+    console.log(d);
+    return (Math.round(d));
 }
 
 function userGender(){
