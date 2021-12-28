@@ -55,7 +55,7 @@
 
 
 // Declaration for the various variables and arrays to be used in the fuctions 
-let CC, YY, MM, DD, d, monthIndex, monthInput, birthYear, dayAkanName; 
+let CC, YY, MM, DD, d, monthIndex, monthInput, birthYear, dayAkanName, date; 
 const monthConvert = ["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"];
 
 // This function will validate the date fed in the form
@@ -102,54 +102,58 @@ function findDay(){
     return (Math.floor(d));
 }
 
-function gender(){
-    let gender = document.getElementById(gender).value;
+function userGender(){
+    let gender = document.getElementById("gender").value;
     if (gender == 'male'){
         if(date == 0){
-            alert("You were born on Sunday so we name you Kwasi")
+            alert("You were born on Sunday so your Akan name is Kwasi")
         }
         else if(date == 1){
-            alert("You were born on Monday so we name you Kwadwo")
+            alert("You were born on Monday so your Akan name is Kwadwo")
         }
         else if(date == 2){
-            alert("You were born on Tuesday so we name you Kwabena")
+            alert("You were born on Tuesday so your Akan name is Kwabena")
         }
         else if(date == 3){
-            alert("You were born on Wednesday so we name you Kwaku")
+            alert("You were born on Wednesday so your Akan name is Kwaku")
         }
         else if(date == 4){
-            alert("You were born on Thursday so we name you Yaw")
+            alert("You were born on Thursday so your Akan name is Yaw")
         }
         else if(date == 5){
-            alert("You were born on Friday so we name you Kofi")
+            alert("You were born on Friday so your Akan name is Kofi")
         }
         else
-            alert("You were born on Saturday so we name you Kwame")
+            alert("You were born on Saturday so your Akan name is Kwame")
     }
     else if (gender == 'female'){
         if(date == 0){
-            alert("You were born on Sunday so we name you Akosua")
+            alert("You were born on Sunday so your Akan name is Akosua")
         }
         else if(date == 1){
-            alert("You were born on Monday so we name you Adwoa")
+            alert("You were born on Monday so your Akan name is Adwoa")
         }
         else if(date == 2){
-            alert("You were born on Tuesday so we name you Abenaa")
+            alert("You were born on Tuesday so your Akan name is Abenaa")
         }
         else if(date == 3){
-            alert("You were born on Wednesday so we name you Akua")
+            alert("You were born on Wednesday so your Akan name is Akua")
         }
         else if(date == 4){
-            alert("You were born on Thursday so we name you Yaa")
+            alert("You were born on Thursday so your Akan name is Yaa")
         }
         else if(date == 5){
-            alert("You were born on Friday so we name you Afua")
+            alert("You were born on Friday so your Akan name is Afua")
         }
         else
-            alert("You were born on Saturday so we name you Ama")
+            alert("You were born on Saturday so your Akan name is Ama")
           
     }
     else
         alert("Sorry. We do not have an Akan Name for the Gender you Picked")    
 }
 
+function akanName(){
+    date = findDay();
+    userGender();
+}
