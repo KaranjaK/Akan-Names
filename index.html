@@ -59,14 +59,14 @@
                         </form> -->
 
                         <!-- This is the form that collects the details from the user -->
-                        <form action="javascript:inputValidate()" id="form">
+                        <form action="javascript:inputValidate()" id="form" name="form">
                             <h1>Kindly fill in all the sections below</h1>
                             <label for="year">In which year were you born?</label>
-                            <input type="number" id="year" placeholder="e.g. 1998" required>
+                            <input type="number" id="year" name="year" placeholder="e.g. 1998" required>
                             <label for="month">In which month were you born?</label>
-                            <input type="text" id="month" placeholder="e.g. August" required>
+                            <input type="text" id="month" name="month" placeholder="e.g. August" required>
                             <label for="date">On which date were you born?</label>
-                            <input type="text" id="date" placeholder="e.g. 25" required>
+                            <input type="number" id="date" name="date" placeholder="e.g. 25" required>
                             <label for="gender">What is your gender?</label>
                             <select name="gender" id="gender" value="gender" required>
                                 <option value="" selected> -- Pick your Gender -- </option>
