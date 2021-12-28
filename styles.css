@@ -49,6 +49,20 @@ header p{
     font-size: 1.5em;
     padding:.5em;
 }
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form h1{
+    font-size: 2em;
+}
+#submit{
+    background-color: rgb(224, 224, 0);
+    border-radius: black;
+    width: 5em;
+    height: 3em;
+}
 .btn {
     background-color: rgb(224, 224, 0);
 }
