@@ -1,93 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oleo Script Swash Caps" />
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Oleo Script Swash Caps"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script defer src="script.js"></script>
     <title>Akan Name</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- This is the header section-->
     <header>
-        <h1>Akan <span>Names</span></h1>
-        <p>
-            <span>The Akan people of Ghana frequently name their children after the day of the week</span>
-            <span>they were born and the order in which they were born. These "day names" have further</span>
-            <span>meanings concerning the soul and character of the person. Middle names have considerably</span>
-            <span>more variety and can refer to their birth order, twin status, or an ancestor's middle name.</span>
-            <span>Most Ghanaians have at least one name from this system, even if they also have an English </span>
-            <span>or Christian name. Notable figures with day names include Ghana's first president Kwame </span>
-            <span>Nkrumah and former United Nations Secretary-General Kofi Annan.</span>
-        </p>
+      <h1>Akan <span>Names</span></h1>
+      <p>
+        <span
+          >The Akan people of Ghana frequently name their children after the day
+          of the week</span
+        >
+        <span
+          >they were born and the order in which they were born. These "day
+          names" have further</span
+        >
+        <span
+          >meanings concerning the soul and character of the person. Middle
+          names have considerably</span
+        >
+        <span
+          >more variety and can refer to their birth order, twin status, or an
+          ancestor's middle name.</span
+        >
+        <span
+          >Most Ghanaians have at least one name from this system, even if they
+          also have an English
+        </span>
+        <span
+          >or Christian name. Notable figures with day names include Ghana's
+          first president Kwame
+        </span>
+        <span
+          >Nkrumah and former United Nations Secretary-General Kofi Annan.</span
+        >
+      </p>
     </header>
     <!-- This is the form section -->
     <div class="form">
-        <h1>Get your Akan Name</h1>
-        <p>
-            <span>This webpage will pick your birthday that you will select as well as your gender</span>
-            <span>It will then find the day you were born and then provide you with an Akan Name</span>
-        </p>
-        <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">Akan Name</button>
-        <!-- Pop-up Modal Section  -->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-                <!-- Form in the pop-up -->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Get Your Akan Name</h4>
-                    </div>
-                    <div class="modal-body">
-                        <!-- This form will provide a simple way to the Akan names -->
-                        <!-- <form action="javascript:akanName()">
-                            <label for="date">Date of Birth: </label>
-                            <input type="date" name="day" id="date"><br>
-                            <label for="gender">Gender</label>
-                            <select name="gender" id="gender" value="gender">
-                                <option value="select" selected> -- Pick your Gender -- </option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="others">Others</option>
-                            </select>
-                            <input type="submit" value="Submit">
-                        </form> -->
-
-                        <!-- This is the form that collects the details from the user -->
-                        <form action="javascript:inputValidate()" id="form" name="form">
-                            <h1>Kindly fill in all the sections below</h1>
-                            <label for="year">In which year were you born?</label>
-                            <input type="number" id="year" name="year" placeholder="e.g. 1998" required>
-                            <label for="month">In which month were you born?</label>
-                            <input type="text" id="month" name="month" placeholder="e.g. August" required>
-                            <label for="date">On which date were you born?</label>
-                            <input type="number" id="date" name="date" placeholder="e.g. 25" required>
-                            <label for="gender">What is your gender?</label>
-                            <select name="gender" id="gender" value="gender" required>
-                                <option value="" selected> -- Pick your Gender -- </option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="others">Others</option>
-                            </select><br>
-                            <input type="submit" id="submit" value="Submit" onclick="akanName()">
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+      <h1>Get your Akan Name</h1>
+      <p>
+        <span
+          >This webpage will pick your birthday that you will select as well as
+          your gender</span
+        >
+        <span
+          >It will then find the day you were born and then provide you with an
+          Akan Name</span
+        >
+      </p>
+      <button
+        type="button"
+        class="btn btn-lg"
+        data-toggle="modal"
+        data-target="#myModal"
+      >
+        Akan Name
+      </button>
+      <!-- Pop-up Modal Section  -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Form in the pop-up -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">Get Your Akan Name</h4>
             </div>
+            <div class="modal-body">
+              <!-- This is the form that collects the details from the user -->
+              <form action="javascript:inputValidate()" id="form" name="form">
+                <h1>Kindly fill in all the sections below</h1>
+                <label for="year">In which year were you born?</label>
+                <input
+                  type="number"
+                  id="year"
+                  name="year"
+                  placeholder="e.g. 1998"
+                  required
+                />
+                <label for="month">In which month were you born?</label>
+                <input
+                  type="text"
+                  id="month"
+                  name="month"
+                  placeholder="e.g. August"
+                  required
+                />
+                <label for="date">On which date were you born?</label>
+                <input
+                  type="number"
+                  id="date"
+                  name="date"
+                  placeholder="e.g. 25"
+                  required
+                />
+                <label for="gender">What is your gender?</label>
+                <select name="gender" id="gender" value="gender" required>
+                  <option value="" selected>-- Pick your Gender --</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="others">Others</option></select
+                ><br />
+                <input
+                  type="submit"
+                  id="submit"
+                  value="Submit"
+                />
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
-  
-</div>
-<footer>
-    &copy 2021
-</footer>
-    
-</body>
+      </div>
+    </div>
+    <footer>&copy 2021</footer>
+  </body>
 </html>
