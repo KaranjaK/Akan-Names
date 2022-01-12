@@ -1,5 +1,5 @@
 // Declaration for the various variables and arrays to be used in the fuctions
-let CC, YY, MM, DD, d, monthIndex, monthInput, birthYear, dayAkanName, date;
+let YY, MM, DD, d, monthIndex, monthInput, birthYear, dayAkanName, date;
 const monthConvert = [
   "JANUARY",
   "FEBRUARY",
@@ -40,6 +40,10 @@ function inputValidate() {
     alert("Your date of birth is not a valid Calendar date");
     document.form.date.focus();
     return false;
+  } else if (document.form.year.value % 4 == 0 && monthIndex == 1 && document.form.date.value > 28) {
+    alert(
+      "You have entered a leap year hence February should not have more than 28 days"
+    );
   } else {
     akanName();
   }
@@ -53,21 +57,27 @@ function findDay() {
 
   // This will pick the necessary data for the formula and calculate the day
   birthYear = document.getElementById("year").value;
-  console.log(birthYear)
-  if(birthYear % 100 == 0){
-      CC = birthYear/100
-  }
-  else{
-     CC = Math.floor(birthYear/100) + 1
-  }
-  YY = parseInt(birthYear.substring(2, 4));
-  MM = monthIndex + 1;
   DD = parseInt(document.getElementById("date").value);
-  d = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
-  console.log(d)
+  YY = parseInt(birthYear);
+  if (monthIndex < 2) {
+    MM = monthIndex + 13;
+    YY = birthYear - 1;
+  } else if (monthIndex >= 2) {
+    MM = monthIndex + 1;
+  }
+  d =
+    ((DD +
+      Math.floor((13 * (MM + 1)) / 5) +
+      YY +
+      Math.floor(YY / 4) -
+      Math.floor(YY / 100) +
+      Math.floor(YY / 400)) %
+      7) -
+    1;
   return d;
 }
 
+// This function will pick the gender and calculated date and convert it into a day and Akan Name
 function userGender() {
   let gender = document.getElementById("gender").value;
   if (gender == "male") {
